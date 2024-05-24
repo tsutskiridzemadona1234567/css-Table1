@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +8,11 @@
     <title>ჩემი პროექტი-CSS</title>
     <style>
         *{ box-sizing: border-box; margin: 0}
+        .container{
+            width: 1158px;
+            margin-left: auto;
+            margin-right: auto;
+        }
         table{
             border-collapse: collapse;  
             width: 50%;
@@ -19,8 +25,11 @@
             background-color: #FFD43A;
             width: 115px;
             height: 36px;
-            font-style:normal;
-            src: url("fonts/Inter/static/Inter-Thin.ttf");
+            border: 0;
+            font-family: normal;
+        }
+        table,th,td{
+            font-family: normal;
         }
         .color{
             color: red;
@@ -34,8 +43,10 @@
     </style>
 </head>
 <body>
-    <h3>News Table</h3>
-    <table border="1">
+    
+    <div class="container"> 
+        <h3>News Table</h3>  
+         <table border="1">
         <tr>
             <th>ID</th>
             <th>Title</th>
@@ -103,5 +114,6 @@
             <td><button class="button">Edit</button></td>
         </tr>
     </table>
+</div>
 </body>
 </html>
